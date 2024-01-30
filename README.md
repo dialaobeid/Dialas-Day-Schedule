@@ -18,10 +18,10 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
-Created my code with some assistance frm Xpert learning assistant and google.
+Created my code with some assistance from Xpert learning assistant and google.
 
-Screenshot:
+Screenshot: ![Alt text](assets/Project-screenshot.png)
 
-Link to github repository for this project: 
+Link to github repository for this project: https://github.com/dialaobeid/Dialas-Day-Schedule
 
-Link to deployed application:
+Link to deployed application: https://dialaobeid.github.io/Dialas-Day-Schedule/
