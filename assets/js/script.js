@@ -1,6 +1,3 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
 $(function () {
     // listener for click events on the save button
     $(".saveBtn").on("click", function () {
@@ -52,8 +49,14 @@ $(function () {
             $(this).find(".description").val(userInput);
         });
     }
-    
-    // TODO: Add code to display the current date in the header of the page.
+
+    // Displays today's date in the header
+    $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY"));
+
+    // calling functions to start the page
+    timeBlockColors();
+    getUserInput();
+
+    // updates time block colors every minute
+    setInterval(timeBlockColors, 60000);
 });
-
-
